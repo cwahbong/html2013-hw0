@@ -17,7 +17,15 @@
 			\item 2: $(1, 0, -1)$, $(0, 1, -1)$
 		\end{itemize}
 	\item (singular value decomposition) \\
-		TODO
+		By definition,
+		\begin{itemize}
+			\item $V^T V=I$, $U^T U=I$. ($U$, $V$ are unitary matrices.)
+			\item $\Sigma^{\dagger}\Sigma=I$ or $\Sigma\Sigma^{\dagger}=I$.
+		\end{itemize}
+		$MM^{\dagger}M = (U\Sigma V^T)(V\Sigma^{\dagger}U^T)(U\Sigma V) = U\Sigma V = M$ \\
+		If $M$ is invertable, then it must be a square $\Rightarrow$ $\Sigma\Sigma^{\dagger}=I$ $\Rightarrow MM^{\dagger}=I$.
+
+		Since inverse of a matrix is unique, $M^{\dagger}=M^{-1}$.
 	\item (PD/PSD) \\
 		TODO
 	\item (inner product) \\
