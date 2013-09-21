@@ -28,7 +28,11 @@
 		\item $\min(P(A\cup B)) = \max(P(A), P(B)) = 0.4$
 	\end{itemize}
 	\item (mean/variance) \\
-		TODO
+		Since $\sum^N_{n=1}X_n = N\overline{X}$,
+		\begin{align*}
+			\sum^N_{n=1}(X_n-\overline{X})^2 &= \sum^N_{n=1}X_n^2 - 2\sum^N_{n=1}X_n\overline{X} + N\overline{X}^2 \\
+				&= \sum^N_{n=1}X_n^2 - N\overline{X}^2 = \sum^N_{n=1}(X_n^2 - \overline{X}^2)
+		\end{align*}
 	\item (Gaussian distribution) \\
 		TODO
 \end{enumerate}
