@@ -1,3 +1,5 @@
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
 \section{Linear Albegra}
 \begin{enumerate}[(1)]
 	\item (rank) \\
@@ -28,13 +30,13 @@
 		Since inverse of a matrix is unique, $M^{\dagger}=M^{-1}$.
 	\item (PD/PSD)
 		\begin{itemize}
-			\item For any column vector $x$, we let $x' = Z^Tx$,
-				then $x'^T = x^TZ$.$x^TZZ^Tx = x'^Tx' \geq 0$.
+			\item For any column vector $\vec{x}$, we let $\vec{x'} = Z^T\vec{x}$,
+				then $\vec{x'}^T = \vec{x}^TZ$.$\vec{x}^TZZ^T \vec{x} = \vec{x'}^T\vec{x'} \geq 0$.
 			\item ($\Leftarrow$) For all non-zero vector $x$ such that
-				$Ax = \lambda x$, $\lambda$ is positive.  So
-				$x^TAx = x^T\lambda x > 0$ \\
-				($\Rightarrow$) For any eigenvector $x$, $x^TAx > 0$.
-				$\Rightarrow x^T\lambda x > 0 \Rightarrow \lambda > 0$.
+				$A\vec{x} = \lambda \vec{x}$, $\lambda$ is positive.  So
+				$\vec{x}^TA\vec{x} = \vec{x}^T\lambda \vec{x} > 0$ \\
+				($\Rightarrow$) For any eigenvector $\vec{x}$, $\vec{x}^TA\vec{x} > 0$.
+				$\Rightarrow \vec{x}^T\lambda \vec{x} > 0 \Rightarrow \lambda > 0$.
 		\end{itemize}
 	\item (inner product) \\
 		TODO
