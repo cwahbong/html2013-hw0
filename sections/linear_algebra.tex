@@ -11,7 +11,7 @@
 				3 & -3 & 2
 			\end{pmatrix*}
 		\]
-	\item (eigen values/eigen vectors) \\
+	\item (eigen values/eigen vectors)
 		\begin{itemize}
 			\item 4: $(1, 2, -1)$
 			\item 2: $(1, 0, -1)$, $(0, 1, -1)$
@@ -26,8 +26,16 @@
 		If $M$ is invertable, then it must be a square $\Rightarrow$ $\Sigma\Sigma^{\dagger}=I$ $\Rightarrow MM^{\dagger}=I$.
 
 		Since inverse of a matrix is unique, $M^{\dagger}=M^{-1}$.
-	\item (PD/PSD) \\
-		TODO
+	\item (PD/PSD)
+		\begin{itemize}
+			\item For any column vector $x$, we let $x' = Z^Tx$,
+				then $x'^T = x^TZ$.$x^TZZ^Tx = x'^Tx' \geq 0$.
+			\item ($\Leftarrow$) For all non-zero vector $x$ such that
+				$Ax = \lambda x$, $\lambda$ is positive.  So
+				$x^TAx = x^T\lambda x > 0$ \\
+				($\Rightarrow$) For any eigenvector $x$, $x^TAx > 0$.
+				$\Rightarrow x^T\lambda x > 0 \Rightarrow \lambda > 0$.
+		\end{itemize}
 	\item (inner product) \\
 		TODO
 	\item (distance) \\
